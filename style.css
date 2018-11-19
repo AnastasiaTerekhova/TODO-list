@@ -1,0 +1,128 @@
+html, body { 
+	margin: 0; 
+	padding: 0; 
+	background: #fcfcfc;
+    }
+
+div { 
+	margin: 5px; 
+	text-align: center; 
+	} 
+
+button{ 
+	background: none; 
+	border: 0; 
+	color: inherit; 
+	font: inherit; 
+	line-height: normal; 
+	overflow: visible; 
+	padding: 0; 
+}
+
+p{
+    line-height: 19px;
+    text-align: center;
+	background-color: #565461;
+    color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.6);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+h1, h2{
+	font-family: Alegreya, 'Comfortaa', sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+li {
+	list-style-type: none;
+	font-family: 'Alegreya Sans', sans-serif;
+	min-height: 35px;
+	text-align: left;
+	font-size: 15pt;
+}
+
+#app{
+	width: 90%;
+	margin: 20px auto;
+}
+
+#box {
+	width: 80%;
+    margin: auto;
+    
+}
+
+.checkbox {
+	width: 20px;             
+	height: 20px;     	
+}
+
+.listright {
+	float:right;
+	width: 45%;
+	/* border: 1px solid #000 */
+	}
+
+.list {
+	float: left;
+	width: 45%;
+	/* border: 1px solid #000; */
+}
+
+.textbox{
+	border-top-right-radius: 30px;
+	border: 1px solid #04001c;
+	height: 35px;
+	width: 350px;
+	box-shadow: 0 4px 6px #acabb3; 
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 15pt;
+	outline: 0;
+}
+.textbox:hover {
+	box-shadow: 0 5px 14px #818087;
+	transition: .6s;
+}
+
+.buttonadd{
+	height: 37px;
+	width: 77px;
+	border: 1px solid #04001c;
+	background: #fff;
+	color: #000;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	box-shadow: 0 4px 6px #acabb3;
+	outline: 0;
+}
+
+.buttonadd:hover {
+	transition: .5s;
+	border: 1px solid #04001c;
+	background: #343245;
+	color: #e9e8ed;
+	box-shadow: 0 5px 10px #818087; 
+}
+
+.buttondell {
+  cursor: default;
+  color: #fa0000;
+  text-align: center;
+  font: normal 17px arial;
+  text-shadow: 0 0 21px rgb(252, 136, 136, 0.5), 0 -1px 0 #9e0e0e;
+  outline: 0;
+}
+
+.buttondell:hover {
+  transition: color 200ms linear, text-shadow 500ms linear;
+  color: #fff7f9;
+  text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #9e0e0e;
+  transition: 0.6s;
+}
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Todo list</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Comfortaa" rel="stylesheet">
+  
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+
+	<div id ="app">
+		<div class="container">
+				<header><h1>{{ title }}</h1></header>
+					<form>
+							<input class="textbox" type="text" v-model="inputText" v-on:keypress.13.prevent="addItem">
+								<button class="buttonadd" v-on:click="addItem" type="button">ОК</button>
+									<span><p>Дел всего: {{count}}</p></span>
+		            				<span><p>Выполненные: {{cont}}</p></span>	
+					</form>	
+					<div id="box">
+						<div class="list" >
+							<h2>Дела на сегодня</h2>
+							<ul>
+								<li v-for="(el,index) in list" v-if="el.checked==false">
+									<input type="checkbox" class="checkbox" v-on:click="el.checked=!el.checked" @click="performedElements(index)"> {{ el.text }} 
+
+									<button class="buttondell" @click="deleteElement(index)">х</button>
+								</li>	
+							</ul>
+						</div>
+						<div class="listright"> 
+							<h2>Выполненные дела</h2>
+							<ul>
+								<li v-for="(el, index) in list" v-if="el.checked==true"> 
+                                    <input type="checkbox" class="checkbox" checked v-on:click="el.checked=!el.checked" @click="performedElements(index)"> {{ el.text }}
+
+									<button class="buttondell" @click="deleteElement(index)" >х</button>
+								</li>	
+							</ul>
+						</div>	
+
+					</div>
+		</div>
+	</div>		
+
+<script src="main.js"></script>
+	
+</body>
+</html>
